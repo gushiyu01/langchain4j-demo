@@ -1,0 +1,19 @@
+server:
+  port: 10004
+redis:
+  host: 106.75.246.168/
+  port: 6380
+  password: gsy123456
+#langchain4j:
+#  open-ai:
+#    chat-model:
+#      api-key: sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn
+#      model-name: Qwen/QwQ-32B
+#      base-url: https://api.siliconflow.cn/v1/chat/completions
+spring:
+  webflux:
+    multipart:
+      headers-charset: UTF-8
+logging:
+  level:
+    dev.langchain4j.model.openai: DEBUG

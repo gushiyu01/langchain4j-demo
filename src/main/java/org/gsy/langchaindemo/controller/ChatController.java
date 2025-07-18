@@ -1,0 +1,40 @@
+package org.gsy.langchaindemo.controller;
+
+import dev.langchain4j.service.Result;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
+
+import java.util.List;
+
+/**
+ * @program: langchain-demo
+ * @description: .
+ * @author: GSY
+ * @create: 2025-07-15 17:34
+ **/
+@RestController
+@RequestMapping("/chat")
+public class ChatController {
+
+    @Autowired
+    private ChatService chatService;
+
+    @GetMapping("/chat")
+    public String model(
+            @RequestParam("memoryId") String memoryId,
+            @RequestParam("message") String message
+            ) {
+        Result<String> chat = chatService.chat(memoryId, message);
+        return chat.content();
+    }
+
+    @GetMapping(value="/chatStream")
+    public Flux<String> chatStream(@RequestParam("message") String message,
+                                   @RequestParam("memoryId") String memoryId)  {
+        return chatService.chatStream(memoryId,  message);
+    }
+}
