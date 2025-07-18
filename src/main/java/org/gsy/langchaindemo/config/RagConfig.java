@@ -1,4 +1,4 @@
-package org.gsy.langchaindemo.controller.config;
+package org.gsy.langchaindemo.config;
 
 import dev.langchain4j.data.segment.TextSegment;
 import dev.langchain4j.model.chat.listener.ChatModelErrorContext;

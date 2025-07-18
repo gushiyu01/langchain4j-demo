@@ -1,4 +1,4 @@
-package org.gsy.langchaindemo.controller;
+package org.gsy.langchaindemo.service;
 
 import dev.langchain4j.service.MemoryId;
 import dev.langchain4j.service.Result;
@@ -17,6 +17,6 @@ public interface ChatService {
     @SystemMessage("你是一个天文学家")
     Result<String> chat(@MemoryId String memoryId, @UserMessage String userMessage);
 
-    @SystemMessage("你是一个天文学家")
+    @SystemMessage(fromResource = "default_user.txt")
     Flux<String> chatStream(@MemoryId String memoryId, @UserMessage String userMessage);
 }

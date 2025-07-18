@@ -1,4 +1,4 @@
-package org.gsy.langchaindemo.controller.config;
+package org.gsy.langchaindemo.config;
 
 import dev.langchain4j.data.embedding.Embedding;
 import dev.langchain4j.data.segment.TextSegment;
