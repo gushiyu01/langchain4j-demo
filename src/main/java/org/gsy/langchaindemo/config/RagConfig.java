@@ -36,7 +36,7 @@ public class RagConfig {
         ContentRetriever contentRetriever = EmbeddingStoreContentRetriever.builder()
                 .embeddingStore(embeddingStore)
                 .embeddingModel(embeddingModel)
-                .maxResults(5)
+                .maxResults(3)
                 .minScore(0.85)
                 .build();
         return contentRetriever;
