@@ -79,29 +79,29 @@ public class LangChainConfig {
         return embeddingStore;
     }
 
-    @Bean
-//    @Primary
-    public ChatLanguageModel chatModel() {
-        ChatLanguageModel openAiChatModel = OpenAiChatModel.builder()
-                .apiKey("sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn")
-                .baseUrl("https://api.siliconflow.cn/v1")
-                .modelName("Qwen/QwQ-32B").build();
-        return openAiChatModel;
-    }
-
-    @Bean
-    public StreamingChatLanguageModel streamingChatModel() {
-
-        StreamingChatLanguageModel streamingChatModel = OpenAiStreamingChatModel.builder()
-                .apiKey("sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn")
-                .baseUrl("https://api.siliconflow.cn/v1")
-                .logRequests(true)
-                .logResponses(true)
-                .listeners(List.of(chatModelListener()))
-                .modelName("tencent/Hunyuan-A13B-Instruct").build();
-//                .modelName("Qwen/Qwen3-8B").build();
-        return streamingChatModel;
-    }
+//    @Bean
+////    @Primary
+//    public ChatLanguageModel chatModel() {
+//        ChatLanguageModel openAiChatModel = OpenAiChatModel.builder()
+//                .apiKey("sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn")
+//                .baseUrl("https://api.siliconflow.cn/v1")
+//                .modelName("Qwen/QwQ-32B").build();
+//        return openAiChatModel;
+//    }
+//
+//    @Bean
+//    public StreamingChatLanguageModel streamingChatModel() {
+//
+//        StreamingChatLanguageModel streamingChatModel = OpenAiStreamingChatModel.builder()
+//                .apiKey("sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn")
+//                .baseUrl("https://api.siliconflow.cn/v1")
+//                .logRequests(true)
+//                .logResponses(true)
+//                .listeners(List.of(chatModelListener()))
+//                .modelName("tencent/Hunyuan-A13B-Instruct").build();
+////                .modelName("Qwen/Qwen3-8B").build();
+//        return streamingChatModel;
+//    }
 
 
 }
