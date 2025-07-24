@@ -14,7 +14,7 @@ import reactor.core.publisher.Flux;
  **/
 public interface ChatService {
 
-    @SystemMessage("你是一个天文学家")
+    @SystemMessage("你是一个小助手")
     Result<String> chat(@MemoryId String memoryId, @UserMessage String userMessage);
 
     @SystemMessage(fromResource = "default_user.txt")
