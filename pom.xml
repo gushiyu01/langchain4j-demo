@@ -44,11 +44,12 @@
             <version>1.0.0-beta3</version>
         </dependency>
 
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-mcp</artifactId>
-            <version>1.0.0-beta3</version>
-        </dependency>
+        <!--MCP-->
+<!--        <dependency>-->
+<!--            <groupId>dev.langchain4j</groupId>-->
+<!--            <artifactId>langchain4j-mcp</artifactId>-->
+<!--            <version>1.0.0-beta3</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>dev.langchain4j</groupId>
