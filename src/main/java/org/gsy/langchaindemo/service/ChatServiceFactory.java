@@ -37,7 +37,7 @@ public class ChatServiceFactory {
         return AiServices.builder(ChatService.class)
                 .chatLanguageModel(chatLanguageModel)
                 .streamingChatLanguageModel(streamingChatLanguageModel)
-                .contentRetriever(contentRetriever)
+//                .contentRetriever(contentRetriever)
                 .chatMemoryProvider(memoryId ->  MessageWindowChatMemory.withMaxMessages(100))
 //                .toolProvider(mcpToolProvider)
 //                .tools(new GeneratePicture())

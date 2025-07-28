@@ -1,0 +1,11 @@
+langchain4j:
+  open-ai:
+    chat-model:
+      api-key: ms-426324a5-89e8-4559-8996-28d7305f633d
+      model-name: unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
+      base-url: https://ms-fc-47006da7-5cc6.api-inference.modelscope.cn/v1
+      timeout: 600000
+    streaming-chat-model:
+      api-key: ms-426324a5-89e8-4559-8996-28d7305f633d
+      model-name: unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF
+      base-url: https://ms-fc-47006da7-5cc6.api-inference.modelscope.cn/v1

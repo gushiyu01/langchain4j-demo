@@ -51,19 +51,19 @@ public class LangChainConfig {
     public EmbeddingStore<TextSegment> embeddingStore() {
         EmbeddingStore<TextSegment> embeddingStore = new InMemoryEmbeddingStore<>();
 
-        EmbeddingModel embeddingModel = new AllMiniLmL6V2EmbeddingModel();
-
-        TextSegment segment1 = TextSegment.from("太阳系中最大的行星是木星。");
-        Embedding embedding1 = embeddingModel.embed(segment1).content();
-        embeddingStore.add(embedding1, segment1);
-
-        TextSegment segment2 = TextSegment.from("水星是离太阳最近的行星。");
-        Embedding embedding2 = embeddingModel.embed(segment2).content();
-        embeddingStore.add(embedding2, segment2);
-
-        TextSegment segment3 = TextSegment.from("冥王星已经不是太阳系行星。");
-        Embedding embedding3 = embeddingModel.embed(segment3).content();
-        embeddingStore.add(embedding3, segment3);
+//        EmbeddingModel embeddingModel = new AllMiniLmL6V2EmbeddingModel();
+//
+//        TextSegment segment1 = TextSegment.from("太阳系中最大的行星是木星。");
+//        Embedding embedding1 = embeddingModel.embed(segment1).content();
+//        embeddingStore.add(embedding1, segment1);
+//
+//        TextSegment segment2 = TextSegment.from("水星是离太阳最近的行星。");
+//        Embedding embedding2 = embeddingModel.embed(segment2).content();
+//        embeddingStore.add(embedding2, segment2);
+//
+//        TextSegment segment3 = TextSegment.from("冥王星已经不是太阳系行星。");
+//        Embedding embedding3 = embeddingModel.embed(segment3).content();
+//        embeddingStore.add(embedding3, segment3);
         return embeddingStore;
     }
 

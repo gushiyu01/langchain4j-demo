@@ -17,6 +17,6 @@ public interface ChatService {
     @SystemMessage("你是一个万能小助手")
     Result<String> chat(@MemoryId String memoryId, @UserMessage String userMessage);
 
-    @SystemMessage(fromResource = "default_user.txt")
+//    @SystemMessage(fromResource = "default_user.txt")
     Flux<String> chatStream(@MemoryId String memoryId, @UserMessage String userMessage);
 }

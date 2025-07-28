@@ -2,9 +2,10 @@ langchain4j:
   open-ai:
     chat-model:
       api-key: sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn
-      model-name: Qwen/QwQ-32B
+      model-name: Qwen/Qwen3-8B
       base-url: https://api.siliconflow.cn/v1/
+      timeout: 600000
     streaming-chat-model:
       api-key: sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn
-      model-name: Qwen/QwQ-32B
+      model-name: Qwen/Qwen3-8B
       base-url: https://api.siliconflow.cn/v1/
