@@ -28,10 +28,12 @@ public class ChatController {
         return chat.content();
     }
 
-    @GetMapping(value="/chatStream")
+    @GetMapping(value="/chatStream", produces = "text/plain;charset=UTF-8")
     @CrossOrigin
     public Flux<String> chatStream(@RequestParam("message") String message,
                                    @RequestParam("memoryId") String memoryId)  {
         return chatService.chatStream(memoryId,  message);
     }
+
+
 }
