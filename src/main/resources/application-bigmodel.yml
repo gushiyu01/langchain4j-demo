@@ -1,4 +1,8 @@
 zhipu:
   ai:
     api-key: bb0c6a352dd24cc68a28e53c429bc67c.YvaQJ9nqyjEGpGri
+spring:
+  data:
+    mongodb:
+      uri: mongodb://106.75.246.168:27017/chat_memory_db?directConnection=true
 

@@ -10,3 +10,7 @@ langchain4j:
         api-key: sk-6a8ca55474304116bcd2279353475ff3
         model-name: qwen-turbo
 #        base-url: https://dashscope.aliyun.com/api/v1
+spring:
+  data:
+    mongodb:
+      uri: mongodb://106.75.246.168:27017/chat_memory_db?directConnection=true

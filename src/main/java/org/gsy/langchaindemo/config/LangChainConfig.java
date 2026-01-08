@@ -27,25 +27,25 @@ public class LangChainConfig {
         return new AllMiniLmL6V2EmbeddingModel();
     }
 
-    @Bean
-    ChatModelListener chatModelListener() {
-        return new ChatModelListener() {
-            @Override
-            public void onRequest(ChatModelRequestContext requestContext) {
-                System.out.println("onRequest(): {}"+requestContext.chatRequest());
-            }
-
-            @Override
-            public void onResponse(ChatModelResponseContext responseContext) {
-                System.out.println("onResponse(): {}"+responseContext.chatResponse());
-            }
-
-            @Override
-            public void onError(ChatModelErrorContext errorContext) {
-                System.out.println("onError(): {}"+errorContext.error().getMessage());
-            }
-        };
-    }
+//    @Bean
+//    ChatModelListener chatModelListener() {
+//        return new ChatModelListener() {
+//            @Override
+//            public void onRequest(ChatModelRequestContext requestContext) {
+//                System.out.println("onRequest(): {}"+requestContext.chatRequest());
+//            }
+//
+//            @Override
+//            public void onResponse(ChatModelResponseContext responseContext) {
+//                System.out.println("onResponse(): {}"+responseContext.chatResponse());
+//            }
+//
+//            @Override
+//            public void onError(ChatModelErrorContext errorContext) {
+//                System.out.println("onError(): {}"+errorContext.error().getMessage());
+//            }
+//        };
+//    }
 
     @Bean
     public EmbeddingStore<TextSegment> embeddingStore() {

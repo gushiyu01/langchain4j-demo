@@ -1,3 +1,4 @@
+# 硅基流动
 langchain4j:
   open-ai:
     chat-model:
@@ -9,3 +10,11 @@ langchain4j:
       api-key: sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn
       model-name: Qwen/Qwen3-8B
       base-url: https://api.siliconflow.cn/v1/
+      temperature: 0.6
+      top-p: 0.95
+      max-tokens: 8192
+      stop: ["\n\nHuman:", "\n\nAssistant:"]
+spring:
+  data:
+    mongodb:
+      uri: mongodb://106.75.246.168:27017/chat_memory_db?directConnection=true

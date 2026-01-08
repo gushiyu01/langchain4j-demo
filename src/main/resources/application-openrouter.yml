@@ -1,15 +1,15 @@
-# 硅基流动
+# https://openrouter.ai/
 langchain4j:
   open-ai:
     chat-model:
-      api-key: sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn
-      model-name: Qwen/Qwen3-8B
-      base-url: https://api.siliconflow.cn/v1/
+      api-key: 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
+      model-name: qwen/qwen3-coder:free
+      base-url: https://openrouter.ai/api/v1
       timeout: 600000
     streaming-chat-model:
-      api-key: sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn
-      model-name: Qwen/Qwen3-8B
-      base-url: https://api.siliconflow.cn/v1/
+      api-key: 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
+      model-name: qwen/qwen3-coder:free
+      base-url: https://openrouter.ai/api/v1
 spring:
   data:
     mongodb:

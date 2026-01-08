@@ -1,19 +1,24 @@
 server:
   port: 10004
+  servlet:
+    encoding:
+      # 流式乱码
+      charset: utf-8
+      force: true
 redis:
   host: 106.75.246.168/
   port: 6380
   password: gsy123456
-spring:
-  webflux:
-    multipart:
-      headers-charset: UTF-8
+#spring:
+#  webflux:
+#    multipart:
+#      headers-charset: UTF-8
   profiles:
     active: openai
   servlet:
     multipart:
       max-file-size: 100MB
       max-request-size: 100MB
-logging:
-  level:
-    dev.langchain4j.model.openai: DEBUG
+#logging:
+#  level:
+#    dev.langchain4j.model.openai: DEBUG
