@@ -1,0 +1,16 @@
+# 硅基流动
+langchain4j:
+  open-ai:
+    chat-model:
+      api-key: sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn
+      model-name: Qwen/Qwen3-8B
+      base-url: https://api.siliconflow.cn/v1/
+      timeout: 600000
+    streaming-chat-model:
+      api-key: sk-vwhxyroalhuwmzpposigzidyqbosvbeoopefcahgxpxlpnnn
+      model-name: Qwen/Qwen3-8B
+      base-url: https://api.siliconflow.cn/v1/
+spring:
+  data:
+    mongodb:
+      uri: mongodb://106.75.246.168:27017/chat_memory_db?directConnection=true
